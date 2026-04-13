@@ -1,0 +1,42 @@
+@use "mixins" as m;
+@use "detailView" as d;
+
+
+*{ 
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    
+    @include m.largeScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44);
+   }
+
+}
+
+#exam-app {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    color: #ddd;
+    min-height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    gap: 1rem;
+    scrollbar-width: none;
+
+    @include m.largeScreen { 
+      height: 900px;
+      min-height: unset;
+      width: 400px;
+      overflow: auto;
+      border-radius: 6px; 
+      box-shadow: 1px 1px 5px rgb(111, 111, 112);
+    }
+}
