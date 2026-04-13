@@ -195,8 +195,11 @@
     }
     
       &__saveDateBtn{
-        padding: 0.2rem;
-        height: 2rem;
+        padding: 0.4rem 0.6rem;
+        min-height: 2rem;
+        height: auto;
+        white-space: normal;
+        text-align: center;
         border-radius: v.$border-radius;
         border: none;
         background-color: #38b000;
